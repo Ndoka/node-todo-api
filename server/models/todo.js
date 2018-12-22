@@ -1,6 +1,6 @@
-var mongoose = require('mongoose');
+var {mongoose} = require('../db/mongoose');
 
-var Todo = mongoose.model('Todo', {
+var Todo = mongoose.model('todo', {
     text:{
         type:String,
         required:true,
@@ -17,8 +17,8 @@ var Todo = mongoose.model('Todo', {
     }
 });
 
-// var newTodo = new ToDo({
-//     text:'  Edit this video'
+// var newTodo = new Todo({
+//     text:' Edit this video'
 // });
 
 // newTodo.save().then((doc)=>{

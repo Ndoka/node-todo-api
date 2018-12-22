@@ -1,5 +1,5 @@
 
-var mongoose = require('mongoose');
+var {mongoose} = require('../db/mongoose');
 
 var User = mongoose.model('users', {
     email:{
@@ -10,9 +10,9 @@ var User = mongoose.model('users', {
     }
 });
 
-var newUser = new User({
-    email: 'titus.ndoka@gmail.com'
-})
+// var newUser = new User({
+//     email: 'titus.ndoka@gmail.com'
+// })
 
 // newUser.save().then((doc)=>{
 //     console.log(doc);
